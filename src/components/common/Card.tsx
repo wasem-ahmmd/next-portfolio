@@ -13,12 +13,12 @@ interface HeadingProps   {
 const Card = ({svg,title,subtitle,Ptext,date,cardclass}:HeadingProps ) => {
   return (
     <div className={cn(cardclass, "w-full h-auto bg-card-grad rounded-[16px] p-6")}>
-      <div className="card-content flex gap-3 mb-7">
-        <div className="card-svg">
+      <div className="card-content md:flex gap-3 mb-7">
+        <div className="card-svg mb-7 md:mb-0">
         {svg}
         </div>
         <div className="card-title  py-1">
-          <h1 className="text-dark font-Montserrat font-500 italic text-h3-32 leading-h3 tracking-h1-h2 mb-1">
+          <h1 className="text-dark font-Montserrat font-500 md:italic text-[21px] md:text-h3-32 leading-[21px]  md:leading-h3 tracking-h1-h2 mb-4 md:mb-1">
            {title}
           </h1>
           <h2 className="text-dark font-Montserrat font-500 text-small-text leading-logo tracking-h1-h2 uppercase">
