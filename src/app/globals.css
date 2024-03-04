@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    @apply p-0 m-0 box-border
+}
+
+body{
+    @apply overflow-x-hidden
+}
+
+html{
+    @apply overflow-x-hidden
+}
