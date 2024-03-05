@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import ServiceCard from "./common/ServiceCard";
 
 const Services = () => {
   return (
@@ -17,49 +18,100 @@ const Services = () => {
           </h1>
         </div>
         <div className="section-content">
-          <div className="image-warrper relative max-w-screen-sm md:max-w-screen-xxl flex flex-col  md:flex-row items-start md:items-center gap-8 my-10">
-            <div className="image-one order-2 md:order-1 w-[300px] xsm:w-[380px] sm:w-[550px] md:w-[432px]">
+          <ServiceCard
+            img_one_order="order-2 md:order-1"
+            text_order="order-1  md:order-2"
+            img_two_order="order-3 md:order-3"
+            image_one={
               <Image
-                src={"/assets/images/Simage1.png"}
+                src={"/assets/images/S0image1.png"}
                 width={432}
                 height={480}
                 alt=""
                 className="rounded-[6px] sm:w-[100%] md:w-[432px]"
               />
-            </div>
-            <div className="text-content md:max-w-[300px] lg:max-w-screen-xxs m-auto order-1  md:order-2">
-              <div className="text-one mb-8 lg:mb-14">
-                <h6 className="text-dark font-Montserrat font-500 italic text-h3-32 leading-h3 tracking-h1-h2 mb-3">
-                  Graphic Design
-                </h6>
-
-                <p className="text-dark font-Montserrat font-400 text-[18px] leading-medium tracking-h1-h2">
-                  Crafting distinct brand identities that resonate with the
-                  essence of each project, from startups seeking recognition to
-                  established brands seeking a fresh visual perspective.
-                </p>
-              </div>
-              <div className="text-two">
-                <h6 className="text-dark font-Montserrat font-500 text-[21px] leading-[21px] tracking-h1-h2 mb-3">
-                  What’s Included?
-                </h6>
-                <p className="text-dark font-Montserrat font-400 text-card-text leading-card tracking-h1-h2">
-                  Seamlessly transitioning between print and digital mediums, I
-                  bring ideas to life across diverse platforms, maintaining
-                  consistency and visual appeal.
-                </p>
-              </div>
-            </div>
-            <div className="image-two order-3 md:order-3 absolute bottom-[8%] -end-[0%] sm:-end-[10%] md:static">
+            }
+            title="Graphic Design"
+            title_text=" Crafting distinct brand identities that resonate with the
+              essence of each project, from startups seeking recognition to
+              established brands seeking a fresh visual perspective."
+            question="What’s Included?"
+            question_text="Seamlessly transitioning between print and digital mediums, I
+              bring ideas to life across diverse platforms, maintaining
+              consistency and visual appeal."
+            image_two={
               <Image
-                src={"/assets/images/Simage2.png"}
+                src={"/assets/images/S0image2.png"}
                 width={248}
                 height={248}
                 alt=""
                 className="rounded-[6px] w-[150px] xsm:w-[210px] sm:w-[248px]"
               />
-            </div>
-          </div>
+            }
+          />
+          <div className="bg-dark/15 h-[1px]"></div>
+
+          <ServiceCard
+            img_one_order="order-2 md:order-3"
+            text_order="order-1  md:order-2"
+            img_two_order="order-3 md:order-1"
+            image_one={
+              <Image
+                src={"/assets/images/S1image1.png"}
+                width={432}
+                height={480}
+                alt=""
+                className="rounded-[6px] sm:w-[100%] md:w-[432px]"
+              />
+            }
+            title="Video Editing"
+            title_text="Weaving compelling narratives through meticulous editing, 
+            I bring stories to life, balancing pacing, timing, and visual elements to captivate audiences."
+            question="What’s Included?"
+            question_text="Transforming raw footage into engaging promotional videos,
+             whether for local businesses or festival-worthy short films, each project is a testament
+              to my storytelling prowess."
+            image_two={
+              <Image
+                src={"/assets/images/S1image2.png"}
+                width={248}
+                height={248}
+                alt=""
+                className="rounded-[6px] w-[150px] xsm:w-[210px] sm:w-[248px]"
+              />
+            }
+          />
+          <div className="bg-dark/15 h-[1px]"></div>
+          <ServiceCard
+            img_one_order="order-2 md:order-1"
+            text_order="order-1  md:order-2"
+            img_two_order="order-3 md:order-3"
+            image_one={
+              <Image
+                src={"/assets/images/S3image1.png"}
+                width={432}
+                height={480}
+                alt=""
+                className="rounded-[6px] sm:w-[100%] md:w-[432px]"
+              />
+            }
+            title="3D Animation"
+            title_text="Creating realistic 3D models for architectural visualization, 
+            I bring concepts to life with attention to detail, lighting, and advanced 
+            rendering techniques."
+            question="What’s Included?"
+            question_text="Contributing to virtual reality projects, I seamlessly integrate 3D elements, 
+            enhancing the immersive experience and pushing the boundaries of digital exploration."
+            image_two={
+              <Image
+                src={"/assets/images/S3image2.png"}
+                width={248}
+                height={248}
+                alt=""
+                className="rounded-[6px] w-[150px] xsm:w-[210px] sm:w-[248px]"
+              />
+            }
+          />
           <div className="bg-dark/15 h-[1px]"></div>
         </div>
       </div>
