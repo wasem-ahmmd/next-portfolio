@@ -14,14 +14,14 @@ const Services = () => {
           </h1>
         </div>
         <div className="section-content">
-          <div className="image-warrper relative flex flex-col  md:flex-row items-start md:items-center gap-8 my-10">
-            <div className="image-one order-2 md:order-1  bg-slate-400">
+          <div className="image-warrper relative max-w-screen-sm md:max-w-screen-xxl flex flex-col  md:flex-row items-start md:items-center gap-8 my-10">
+            <div className="image-one order-2 md:order-1 w-[300px] xsm:w-[380px] sm:w-[550px] md:w-[432px]  bg-slate-400">
               <Image
                 src={"/assets/images/Simage1.png"}
                 width={432}
                 height={480}
                 alt=""
-                className="rounded-[6px] "
+                className="rounded-[6px] sm:w-[100%] md:w-[432px]"
               />
             </div>
             <div className="text-content md:max-w-[300px] lg:max-w-screen-xxs m-auto order-1  md:order-2">
@@ -46,13 +46,13 @@ const Services = () => {
                 </p>
               </div>
             </div>
-            <div className="image-two order-3 md:order-3 absolute bottom-[10%] end-[15%]">
+            <div className="image-two order-3 md:order-3 absolute bottom-[8%] -end-[0%] sm:-end-[10%] md:static">
               <Image
                 src={"/assets/images/Simage2.png"}
                 width={248}
                 height={248}
                 alt=""
-                className="rounded-[6px]"
+                className="rounded-[6px] w-[200px] sm:w-[248px]"
               />
             </div>
           </div>
