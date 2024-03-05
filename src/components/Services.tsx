@@ -52,7 +52,7 @@ const Services = () => {
                 width={248}
                 height={248}
                 alt=""
-                className="rounded-[6px] w-[200px] sm:w-[248px]"
+                className="rounded-[6px] w-[150px] xsm:w-[210px] sm:w-[248px]"
               />
             </div>
           </div>
