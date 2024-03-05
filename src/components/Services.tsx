@@ -6,16 +6,19 @@ const Services = () => {
     <section className="bg-light py-24">
       <div className="container max-w-screen-xxl">
         <div className="section-title ">
-          <span className="text-color-3/80 font-Montserrat font-700 text-medium-txt leading-medium tracking-h1-h2 uppercase">
+          <span className="text-color-3/80 font-Montserrat font-600 sm:font-700 text-small-text sm:text-medium-txt leading-medium tracking-h1-h2 uppercase">
             SERVICES
           </span>
-          <h1 className="text-dark font-Montserrat font-500 text-h2-48 leading-h2 -tracking-h1-h2 uppercase my-1">
+          <h1 className="text-dark font-Montserrat  font-500 text-h2-48 leading-h2 -tracking-h1-h2 uppercase my-1 hidden sm:block">
             HOW CAN I HELP
+          </h1>
+          <h1 className="text-dark font-Montserrat font-700 text-h2-32 leading-[38px] -tracking-h1-h2 uppercase -my-1 block sm:hidden">
+            what i offer
           </h1>
         </div>
         <div className="section-content">
           <div className="image-warrper relative max-w-screen-sm md:max-w-screen-xxl flex flex-col  md:flex-row items-start md:items-center gap-8 my-10">
-            <div className="image-one order-2 md:order-1 w-[300px] xsm:w-[380px] sm:w-[550px] md:w-[432px]  bg-slate-400">
+            <div className="image-one order-2 md:order-1 w-[300px] xsm:w-[380px] sm:w-[550px] md:w-[432px]">
               <Image
                 src={"/assets/images/Simage1.png"}
                 width={432}
@@ -25,10 +28,11 @@ const Services = () => {
               />
             </div>
             <div className="text-content md:max-w-[300px] lg:max-w-screen-xxs m-auto order-1  md:order-2">
-              <div className="text-one md:mb-8 lg:mb-14">
+              <div className="text-one mb-8 lg:mb-14">
                 <h6 className="text-dark font-Montserrat font-500 italic text-h3-32 leading-h3 tracking-h1-h2 mb-3">
                   Graphic Design
                 </h6>
+
                 <p className="text-dark font-Montserrat font-400 text-[18px] leading-medium tracking-h1-h2">
                   Crafting distinct brand identities that resonate with the
                   essence of each project, from startups seeking recognition to
