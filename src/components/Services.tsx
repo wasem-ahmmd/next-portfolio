@@ -14,8 +14,8 @@ const Services = () => {
           </h1>
         </div>
         <div className="section-content">
-          <div className="image-warrper flex flex-col  md:flex-row items-start md:items-center gap-8 my-10">
-            <div className="image-one order-2 md:order-1 bg-slate-400">
+          <div className="image-warrper relative flex flex-col  md:flex-row items-start md:items-center gap-8 my-10">
+            <div className="image-one order-2 md:order-1  bg-slate-400">
               <Image
                 src={"/assets/images/Simage1.png"}
                 width={432}
@@ -46,7 +46,7 @@ const Services = () => {
                 </p>
               </div>
             </div>
-            <div className="image-two order-3 md:order-3">
+            <div className="image-two order-3 md:order-3 absolute bottom-[10%] end-[15%]">
               <Image
                 src={"/assets/images/Simage2.png"}
                 width={248}
