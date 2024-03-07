@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import ServiceCard from "./common/ServiceCard";
+import Offer from "./Offer";
 
 const Services = () => {
   return (
@@ -113,6 +114,7 @@ const Services = () => {
             }
           />
           <div className="bg-dark/15 h-[1px]"></div>
+          <Offer />
         </div>
       </div>
     </section>
