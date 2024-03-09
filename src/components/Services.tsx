@@ -5,7 +5,7 @@ import Offer from "./Offer";
 
 const Services = () => {
   return (
-    <section className="bg-light py-24">
+    <section className="bg-light py-24 relative">
       <div className="container max-w-screen-xxl">
         <div className="section-title ">
           <span className="text-color-3/80 font-Montserrat font-600 sm:font-700 text-small-text sm:text-medium-txt leading-medium tracking-h1-h2 uppercase">
@@ -114,9 +114,10 @@ const Services = () => {
             }
           />
           <div className="bg-dark/15 h-[1px]"></div>
-          <Offer />
+          <Offer /> 
         </div>
       </div>
+      <div className="h-[576px] bg-offer-gradient -mt-44"></div>
     </section>
   );
 };

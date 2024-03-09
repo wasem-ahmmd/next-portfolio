@@ -91,6 +91,7 @@ const config = {
         md: '-60px 0px 60px -40px rgba(249, 120, 76, 1),  -15px 60px 50px -20px rgba(156, 53, 109, 1) '
       },
       backgroundImage:{
+        "offer-gradient":"linear-gradient(-186.50deg, #FFFAEF 24.53%, #FCD68B 37.59%, #F9784C 50.72%, #9C356D 62.85%, #171717 76.83%)",
         "card-grad":"linear-gradient(96.36deg, #FCD68B 0%, #FFFFFF 100%)",
         "text-grad" : " linear-gradient(172.4deg, #FEFAEE 5.26%, #FCD68B 29.9%, #F9784C 53.25%, #9C356D 72.94%)",
         "small-menu":"linear-gradient(342.27deg, #FFFAEF 24.53%, #FCD68B 37.59%, #F9784C 50.72%, #9C356D 62.85%, #171717 76.83%)",
