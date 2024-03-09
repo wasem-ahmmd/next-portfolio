@@ -1,17 +1,17 @@
 import React from "react";
 import { Button, buttonVariants } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
-import Star from "./svg/Star";
+import OfferCard from "./common/OfferCard";
 
 const Offer = () => {
   return (
     <div className="offer-section my-10">
-      <div className="offer-content grid grid-flow-col gap-20   ">
-        <div className="offer-title max-w-screen-xxs">
+      <div className="offer-content md:grid md:grid-flow-col gap-2   ">
+        <div className="offer-title md:max-w-screen-xxs mb-24">
           <h1 className="text-color-3 font-Montserrat font-700 text-medium-txt leading-medium tracking-h1-h2 mb-2 uppercase">
             My offer
           </h1>
-          <h2 className="text-dark font-Montserrat font-500 text-h2-48  leading-h2 -tracking-h1-h2 mb-4 uppercase">
+          <h2 className="text-dark font-Montserrat font-700 md:font-500 text-h3-32  lg:text-h2-48 leading-[38px]  lg:leading-h2 -tracking-h1-h2 mb-12 uppercase">
             Art of Visual Alchemy
           </h2>
           <div className="action-part">
@@ -27,20 +27,22 @@ const Offer = () => {
             </Button>
           </div>
         </div>
-        <div className="offer-text-content flex flex-row gap-10 max-w-screen-sm">
-          <div className="offer-svg">
-            <Star />
-          </div>
-          <div className="offer-line bg-dark/15 h-[1px] w-44 my-4"></div>
-          <div className="offer-text">
-            <h1 className="text-dark font-Montserrat font-500 italic text-h3-32 leading-h3 tracking-h1-h2 mb-4 uppercase">
-              Visual Alchemist
-            </h1>
-            <p className="text-dark/80 font-Montserrat font-400 text-[18px] leading-medium tracking-h1-h2">
-              Crafting brand identities that transcend, ensuring your brand
-              captivates and stands out in a crowded digital landscape.
-            </p>
-          </div>
+        <div className="offer-text-content ">
+          <OfferCard
+            OfferTitle="Visual Alchemist"
+            OfferText="Crafting brand identities that transcend, ensuring your brand
+              captivates and stands out in a crowded digital landscape."
+          />
+          <OfferCard
+            OfferTitle="Aesthetic Maestro"
+            OfferText="Elevating designs with a keen eye, seamlessly
+             transitioning between print and digital for consistently striking visuals."
+          />
+          <OfferCard
+            OfferTitle="Storytelling Virtuoso"
+            OfferText="Mastering the art of storytelling in video editing, creating compelling 
+            narratives for promotional videos and short films."
+          />
         </div>
       </div>
     </div>
