@@ -3,7 +3,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "font-Montserrat font-500 text-small-text leading-logo uppercase rounded-xl",
+  " font-500 text-small-text uppercase rounded-xl",
   {
     variants: {
       variant: {
