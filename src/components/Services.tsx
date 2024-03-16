@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import ServiceCard from "./common/ServiceCard";
 import Offer from "./Offer";
+import Contact from "./Contact";
 
 const Services = () => {
   return (
@@ -118,6 +119,7 @@ const Services = () => {
         </div>
       </div>
       <div className="h-[576px] bg-offer-gradient -mt-44"></div>
+      <Contact />
     </section>
   );
 };
