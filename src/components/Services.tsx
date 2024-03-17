@@ -115,11 +115,8 @@ const Services = () => {
             }
           />
           <div className="bg-dark/15 h-[1px]"></div>
-          <Offer /> 
         </div>
       </div>
-      <div className="h-[576px] bg-offer-gradient -mt-44"></div>
-      <Contact />
     </section>
   );
 };

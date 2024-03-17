@@ -5,7 +5,8 @@ import OfferCard from "./common/OfferCard";
 
 const Offer = () => {
   return (
-    <div className="offer-section my-10">
+    <section className="offer-section bg-light ">
+      <div className="container max-w-screen-xxl">
       <div className="offer-content md:grid md:grid-flow-col gap-2   ">
         <div className="offer-title md:max-w-screen-xxs mb-24">
           <h1 className="text-color-3 font-Montserrat font-700 text-medium-txt leading-medium tracking-h1-h2 mb-2 uppercase">
@@ -45,7 +46,9 @@ const Offer = () => {
           />
         </div>
       </div>
-    </div>
+      </div>
+      <div className="h-[576px] bg-offer-gradient -mt-44"></div>
+    </section>
   );
 };
 

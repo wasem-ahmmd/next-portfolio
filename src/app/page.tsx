@@ -5,6 +5,8 @@ import Nav from "@/components/common/Nav";
 import Work from "../components/Work";
 import Testimonial from "@/components/Testimonial";
 import Services from "@/components/Services";
+import Offer from "@/components/Offer";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
       <Work />
       <Testimonial />
       <Services />
+      <Offer />
+      <Contact />
     </main>
     </>
   )

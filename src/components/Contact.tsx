@@ -2,10 +2,10 @@ import { Button, buttonVariants } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 const Contact = () => {
   return (
-    <div className="contact-us bg-dark py-32">
+    <div className="contact-us bg-dark py-28">
       <div className="container max-w-screen-xxl">
-        <div className="contact-us-contant flex gap-[300px]">
-          <div className="contact-us-title-part max-w-screen-xxs">
+        <div className="contact-us-contant lg:flex gap-14 lg:gap-[100px] xl:gap-[300px]">
+          <div className="contact-us-title-part xl:max-w-screen-xxs mb-10 lg:mb-0">
             <div className="contact-us-title">
               <h1 className="text-light font-Montserrat font-500 text-h2-48 leading-h2 -tracking-h1-h2 uppercase mb-4">
                 Contact
@@ -16,7 +16,7 @@ const Contact = () => {
               </p>
             </div>
             <div className="bg-light/15 h-[1px] my-10"></div>
-            <div className="contact-us-live flex justify-between">
+            <div className="contact-us-live flex justify-start gap-9 lg:gap-0  lg:justify-between">
               <div className="contact-us-location">
                 <h1 className="text-light font-Montserrat font-500 text-card-text leading-[19px] tracking-h1-h2 mb-2">
                   Location
@@ -37,15 +37,15 @@ const Contact = () => {
           </div>
           <div className="contact-us-form">
             <form className="form">
-              <div className="flex justify-between gap-1 mb-5">
-                <div className="form-first-name">
+              <div className="lg:flex lg:justify-between gap-1 mb-5">
+                <div className="form-first-name mb-4 lg:mb-0">
                   <h1 className="text-light font-Montserrat font-500 text-card-text leading-[19px] tracking-h1-h2 mb-2">
                     First Name
                   </h1>
                   <input
                     type="text"
                     placeholder="Your First Name"
-                    className="bg-dark w-[274px] font-Montserrat font-500 text-small-text leading-logo tracking-h1-h2 text-light/60 rounded-3xl border border-light/25 py-3 px-6"
+                    className="bg-dark w-full lg:w-[274px] font-Montserrat font-500 text-small-text leading-logo tracking-h1-h2 text-light/60 rounded-3xl border border-light/25 py-3 px-6"
                   />
                 </div>
                 <div className="form-last-name">
@@ -55,7 +55,7 @@ const Contact = () => {
                   <input
                     type="text"
                     placeholder="Your Last Name"
-                    className="bg-dark w-[274px] font-Montserrat font-500 text-small-text leading-logo tracking-h1-h2 text-light/60 rounded-3xl border border-light/25 py-3 px-6"
+                    className="bg-dark w-full  lg:w-[274px] font-Montserrat font-500 text-small-text leading-logo tracking-h1-h2 text-light/60 rounded-3xl border border-light/25 py-3 px-6"
                   />
                 </div>
               </div>
@@ -75,8 +75,8 @@ const Contact = () => {
                     Select Service
                   </h1>
                 </div>
-                <div className="grid grid-cols-2 mb-2">
-                  <div className="">
+                <div className="grid grid-cols-1 sm:grid-cols-2 mb-2">
+                  <div className="mb-2">
                     <input
                       type="checkbox"
                       className="rounded-full w-[16px] h-[16px] bg-light border border-light/25 align-middle checked:bg-color-3 cursor-pointer appearance-none"
@@ -95,8 +95,8 @@ const Contact = () => {
                     </span>
                   </div>
                 </div>
-                <div className="grid grid-cols-2">
-                  <div className="">
+                <div className="grid grid-cols-1 sm:grid-cols-2">
+                  <div className="mb-2">
                     <input
                       type="checkbox"
                       className="rounded-full w-[16px] h-[16px] bg-light border border-light/25 align-middle checked:bg-color-3 cursor-pointer appearance-none"
@@ -126,15 +126,15 @@ const Contact = () => {
                   className="bg-dark w-full h-40 font-Montserrat font-500 text-small-text leading-logo tracking-h1-h2 text-light/60 rounded-3xl border border-light/25 py-3 px-6"
                 ></textarea>
               </div>
-              <div className="contact-us-action-part flex justify-between gap-4 items-center">
-                <div className="sunmit-btn">
+              <div className="contact-us-action-part sm:flex sm:justify-between sm:gap-4 items-center">
+                <div className="sunmit-btn mb-7 sm:mb-0">
                   <Button
                     className={cn(
                       buttonVariants({
                         variant: "dark",
                         size: "medium",
                         className:
-                          " font-Montserrat border border-light px-8 py-[10px]",
+                          " font-Montserrat border border-light px-8 py-[10px] w-full sm:w-auto",
                       })
                     )}
                   >
