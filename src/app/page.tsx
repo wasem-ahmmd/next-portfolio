@@ -7,6 +7,7 @@ import Testimonial from "@/components/Testimonial";
 import Services from "@/components/Services";
 import Offer from "@/components/Offer";
 import Contact from "@/components/Contact";
+import CopyRight from "@/components/CopyRight";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Services />
       <Offer />
       <Contact />
+      <CopyRight />
     </main>
     </>
   )

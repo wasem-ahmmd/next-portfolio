@@ -35,7 +35,7 @@ const Nav = () => {
             </button>
           </div>
           <ul className="flex xl:items-center xl:flex-row flex-col gap-6 xl:gap-12">
-            {Menulink?.map((item, index) => (
+            {Menulink?.slice(0,5).map((item, index) => (
               <li key={index}>
                 <Link
                   href={item.href}

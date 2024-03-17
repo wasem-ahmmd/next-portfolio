@@ -18,6 +18,14 @@ export const Menulink = [
     {
         page: "Testimonials",
         href: "#testimonial",
+    },
+    {
+        page: "Privacy Policy",
+        href: "#privacy-policy",
+    },
+    {
+        page: "Cookie Policy",
+        href: "#cookie-policy",
     }
 ];
 

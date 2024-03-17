@@ -2,7 +2,7 @@ import { Button, buttonVariants } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 const Contact = () => {
   return (
-    <div className="contact-us bg-dark py-28">
+    <section className="contact-us bg-dark pt-12">
       <div className="container max-w-screen-xxl">
         <div className="contact-us-contant lg:flex gap-14 lg:gap-[100px] xl:gap-[300px]">
           <div className="contact-us-title-part xl:max-w-screen-xxs mb-10 lg:mb-0">
@@ -152,7 +152,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
